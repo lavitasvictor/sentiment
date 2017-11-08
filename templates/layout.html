@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>{% block title %}{% endblock title %}</title>
+<!-- http://getbootstrap.com/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+        <meta charset="utf-8"/>
+        <meta content="initial-scale=1, width=device-width" name="viewport"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+<style type="text/css">
+.warning {
+   background-color: blue;
+   color: yellow;
+   text-decoration: underline;
+   margin: auto;/* ????*/
+   padding: 1px 15px 1px 15px;
+
+
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+{% block body %}
+{% endblock body %}
+
+</br></br>
+
+<label>
+<p>{% block reference %}{% endblock reference %}</p>
+</label>
+</div>
+</body>
+
+
+</html>
+
+

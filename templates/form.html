@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}FORM{% endblock title %}
+
+{% block body %}
+
+</br>
+<div class="page-header">
+<h1>Intuition Game</h1>
+</br>
+<h4>GUESS THE NUMBER FROM 1 TO 5</h4>
+</div>
+</br>
+<label>
+<form action = "{{ url_for('form') }}" method = 'post'>
+<input name = "your_answer" type = "number" value = "0"/>
+<input type = "submit" value = "check your answer!"/>
+</form>
+</label>
+
+{% endblock body %}
+
+
+{% block reference %}
+
+    {% if mistake %}
+    <div class="warning">
+    <h4>
+     Be carefull! Your number SHALL be 1,2,3,4 or 5
+    </h4>
+    </div>
+    {% endif %}
+
+{% endblock reference %}

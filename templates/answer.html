@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}ANSWER{% endblock title %}
+
+{% block body %}
+    {% if check_it %}
+               <div class="page-header">
+        <h1>Correct!</h1>
+        </div>
+    {% else %}
+               <div class="page-header">
+        <h3>Mistake! Correct number is {{guess}}</h3>
+        </div>
+    {% endif %}
+    </br></br>
+    <p>--------------------------------</p>
+    <p>TOTAL POINTS: {{points}}</p>
+    <p>COMP NUMBERS LOG: {{number_log}}</p>
+    <p>YOUR NUMBERS LOG: {{your_number_log}}</p>
+{% endblock body %}
+
+{% block reference %}
+<div class="page-header">
+<h4>
+<a href = "{{ url_for('form') }}">TRY AGAIN</a></br>
+<a href = "{{ url_for('null_the_score')}}">NULL THE SCORE</a>
+</h4>
+</div>
+{% endblock reference %}
+
