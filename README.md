@@ -1,2 +1,1 @@
-# sentiment
-task from cs50 course
+# senitment_project
