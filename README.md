@@ -1,2 +1,1 @@
-# flaskproject1
-my first flask app
+# senitment_project

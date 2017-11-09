@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block subtext %}
+@{{ screen_name }}
+{% endblock %}
+
+{% block body %}
+{{ chart | safe }}
+</br><a href = "{{ url_for('index') }}"><h2>Go Back</h2></a>
+{% endblock %}
+
